@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add">
+
+    <EditText
+        android:id="@+id/Power_add"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="Покупатель"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_add" />
+
+    <EditText
+
+        android:id="@+id/Name_add"
+        android:layout_width="215dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="109dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Power_add"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/image_add"
+        android:layout_width="206dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="28dp"
+        android:onClick="onClickChooseImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_launcher_playstore" />
+
+    <Button
+        android:id="@+id/add_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="76dp"
+        android:onClick="Add"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/Name_add" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="241dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
